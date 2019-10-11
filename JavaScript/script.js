@@ -1,10 +1,16 @@
-// generate random password
+// master variables
 
 var values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*_+";
 var password = "";
 var generateBtn = document.querySelector("#generate-btn");
 var clipboardBtn = document.querySelector("#clipboard-btn");
 var clearBtn = document.querySelector("#clear-btn");
+
+// Special Character Checker Function
+
+function specialCharacter(){
+
+}
 
 // on button generate click
 
@@ -28,6 +34,7 @@ generateBtn.addEventListener("click", function () {
         // add password to textbox/display area
 
         document.getElementById("display").value = password;
+        password = ""
 
     }
 
@@ -56,6 +63,8 @@ clearBtn.addEventListener("click", function(){
     document.getElementById("my-form").reset();
 
 })
+
+
 
 
 
