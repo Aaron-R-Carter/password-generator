@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-  
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
-
     <title>Password-Generator</title>
 </head>
 
@@ -21,52 +19,67 @@
         <a class="navbar-brand" href="#">Welcome!</a>
     </nav>
 
-    <div class="container">
+    <div class="container bg">
         <div class="row">
-            <div class="col-lg-8 col-sm-12 mx-auto mt-5">
+            <div class="col-lg-8 col-sm-12 mx-auto mt-5 mb-5">
                 <div class="content jumbotron shadow-lg ">
                     <div class="container">
                         <h4>Random Password Generator</h4>
                         <br>
-                        <p class="font-weight-light">Use this tool to generate your secure password. </p>
-                        <input type="text" id="display">
-                        <br>
-                       
-                        <div id="length"> </div>
-                        <br>
-                        <div class="row ">
-                            
-                                <button type="button" class=" ml-3 btn btn-outline-primary button-spacing shadow-sm " onclick="generate()">Generate</button>
-                         
-                           
-                                <button type="button" class=" ml-3 btn btn-outline-success button-spacing shadow-sm" onclick="copyPassword()">Copy to Clipboard</button>
-                            </div>
+                        <p class="">Use this tool to generate your secure password. </p>
+                        <hr>
 
-                        </div>
+                        <p class="font-weight-light">Select Password Length:</p>
+                        <form id="my-form">
+                            <input type="text" id="length-selector" maxlength="3" size="3"><br>
 
+
+                            <button type="button" id="generate-btn"
+                                class=" mt-4 btn btn-outline-primary button-spacing shadow-sm">Generate
+                                Password</button>
+
+
+                            <input class="mt-4" type="text" id="display">
+
+                        </form>
+
+                        
+
+                        <button type="button" id="clipboard-btn" class=" btn btn-outline-success mt-4 shadow-sm">Copy to
+                            Clipboard</button>
+
+                        <button type="button" id="clear-btn" class=" ml-2 btn btn-outline-secondary mt-4 shadow-sm">Clear
+                            Password</button>
                     </div>
+
+                    <div id="length"> </div>
                 </div>
+
             </div>
+
         </div>
+    </div>
+    </div>
+    </div>
 
     </div>
 
-   
+
 
 </body>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
-    <script src="JavaScript/script.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+<script src="JavaScript/script.js"></script>
 
 
 </html>

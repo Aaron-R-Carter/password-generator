@@ -1,6 +1,12 @@
 body {
     background-color: rgb(217, 221, 223);
+    /* background-image: url(../images/code\matrix.jpg); */
+   
 }
+
+/* .bg {
+    background-image: url(../images/matrix.jpg);
+} */
 
 .content {
     margin-top: 10px;
@@ -13,6 +19,7 @@ body {
 
 #display{
     width: 100%;
+    
 
 }
 
@@ -28,9 +35,13 @@ body {
     opacity: 0.5;
 }
 
-.button-spacing{
-    margin-top: 20px;
-}
+/* .button-spacing{
+    margin-top: 5px;
+} */
 
+#row-pad {
+    padding-left: 20px;
+    paddingr-right:20px;
+}
 
 
